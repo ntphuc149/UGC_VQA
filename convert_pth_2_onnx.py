@@ -22,17 +22,17 @@ def convert_to_onnx(model_path, onnx_path):
     
     # 3. Export to ONNX
     torch.onnx.export(
-        model,                    # Model being exported
-        dummy_input,             # Dummy input
-        onnx_path,               # Output file
-        export_params=True,      # Store trained weights
-        opset_version=11,        # ONNX version
-        do_constant_folding=True,# Optimize constant folding
-        input_names=['input'],   # Input names
-        output_names=['score'],  # Output names
-        dynamic_axes={           # Dynamic axes
+        model,
+        dummy_input,
+        onnx_path,
+        export_params=True,
+        opset_version=11,
+        do_constant_folding=True,
+        input_names=['input'],
+        output_names=['score'],
+        dynamic_axes={
             'input': {0: 'batch_size', 1: 'num_frames'},
-            'score': {0: 'batch_size'}
+            'score': {0: 'batch_size'}  # Thêm batch dimension cho output
         }
     )
 
