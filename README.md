@@ -6,8 +6,6 @@ A deep learning framework for assessing the quality of user-generated videos usi
 
 This project provides state-of-the-art video quality assessment models specifically designed for user-generated content (UGC). The framework supports both No-Reference (NR) and Full-Reference (FR) evaluation methods.
 
-<img src="model-architecture.png" alt="Model Architecture" width="800"/>
-
 ### Key Features
 
 - 🚀 **No-Reference (NR) Assessment**: Evaluate video quality without reference videos
@@ -29,7 +27,7 @@ This project provides state-of-the-art video quality assessment models specifica
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/UGC_VQA.git
+git clone https://github.com/ntphuc149/UGC_VQA.git
 cd UGC_VQA
 
 # Install required packages
@@ -231,19 +229,6 @@ The models are evaluated using:
 - **KRCC**: Kendall Rank-Order Correlation Coefficient
 - **RMSE**: Root Mean Square Error
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@inproceedings{ugcvqa2024,
-  title={UGC_VQA: Video Quality Assessment for User Generated Content},
-  author={Your Name},
-  booktitle={Proceedings of the Conference},
-  year={2024}
-}
-```
-
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
@@ -255,7 +240,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Contact
 
-For any questions or issues, please open an issue in this repository or contact [your.email@domain.com](mailto:your.email@domain.com).
+For any questions or issues, please open an issue in this repository or contact [n.t.phuc149.cs@gmail.com](mailto:n.t.phuc149.cs@gmail.com).
 
 ## Updates
 
